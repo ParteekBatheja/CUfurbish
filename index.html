@@ -61,8 +61,8 @@
           <!-- </li> -->
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="What're you looking for?" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>&nbsp;
+          <input id="search-input" class="form-control me-2" type="search" placeholder="What're you looking for?" aria-label="Search">
+          <button id="search-button" class="btn btn-outline-success" type="submit">Search</button>&nbsp;
           <a href="profile.html">
             <img src="./images/1yYgcd7o_400x400.jpg" class="butto" alt="Your Photo Description">
         </a>
@@ -211,7 +211,7 @@
       </div>
     </div>
   </div>
-  <div class="clasified-cards-area">
+  <div class="clasified-cards-area" id="mobiles-section">
     <h2>Mobile Phones</h2>
     <div>
 
@@ -401,6 +401,25 @@
         var digitalNotesSection = document.getElementById('digital-notes-section');
         digitalNotesSection.scrollIntoView({ behavior: 'smooth' });
     }
+
+    const searchButton = document.getElementById('search-button');
+    const searchInput = document.getElementById('search-input');
+    const digitalNotesSection = document.getElementById('digital-notes-section');
+    const mobilesSection = document.getElementById('mobiles-section');
+
+    searchButton.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      const searchValue = searchInput.value.toLowerCase();
+
+      if (searchValue.includes('notes') || searchValue.includes('digital notes') || searchValue.includes('study material')) {
+        digitalNotesSection.scrollIntoView({ behavior: 'smooth' });
+      } else if (searchValue.includes('mobile') || searchValue.includes('mobile phone') || searchValue.includes('phone')) {
+        mobilesSection.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      searchInput.value = '';
+    });
 </script>
 
 </body>
