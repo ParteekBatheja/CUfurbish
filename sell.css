@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/Background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    backdrop-filter: blur(1px);
+
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+}
+
+.header {
+    /* background-color: #333; */
+    color: #000000;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+header {
+	background-color: #000000;
+	padding: 10px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.header-text{
+	font-family: "Montserrat", sans-serif;
+	color: #923641;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1420px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	height: 40px;
+	margin-right: 10px;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+    margin-left: 900px;
+}
+
+.btn {
+	background-color: #923641;
+	color: #000000;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.btn:hover {
+	background-color: #fff;
+}
+
+.blur-container {
+    color: #000000;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6); /* Transparent white */
+    margin: auto;
+}
+
+.container {
+    max-width: 99%;
+    margin: 20px auto;
+    text-align: center;
+    /* display: flex; */
+    justify-content: space-evenly;
+    
+}
+h1 {
+    margin-top: 50px;
+    color: #000000;
+    font-size: 40px;
+}
+h2 {
+    margin-top: 30px;
+    color: #000000;
+    font-size: 25px;
+}
+
+
+
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.category-button {
+    width: 250px;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.category-button:hover {
+    background-color: #ddd;
+}
+
+.back-button {
+    position: absolute;
+    margin-top: 55px;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #000000;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+
+.category-button.electronics {
+    background-image: url('./images/workplace-business-modern-male-accessories-laptop-black-background_155003-3944.jpg');
+    background-size: cover;
+    color: #ffffff;
+}
+.category-button.clothing {
+    background-image: url('./images/360_F_596626503_jrzjZNYStDexiWxQFqO7oCh6M8PdMlJs.jpg');
+    background-size: cover;
+    color: #ffffff;
+}
+.category-button.books {
+    background-image: url('./images/wp2036912.webp');
+    background-size: cover;
+    color: #ffffff;
+}
+.category-button.instruments {
+    background-image: url('./images/musical-instruments-in-a-dark-studio-keyboard-stand-with-guitar-and-keyboard-powerpoint-background_f-transformed.jpeg');
+    background-size: cover;
+    color: #ffffff;
+}
+.category-button.sports {
+    background-image: url('./images/sports-equipment-black-background-sport-concept-copy-space-sports-equipment-dark-background-ai-gener.jpg');
+    background-size: cover;
+    color: #ffffff;
+}
+.category-button.car {
+    background-image: url('./images/105845347.webp');
+    background-size: cover;
+    color: #ffffff;
+}
+.category-button.footwear {
+    background-image: url('./images/shoes-chucks-allstars-black-wallpaper-preview.jpg');
+    background-size: cover;
+    color: #ffffff;
+}
+.category-button.hostel {
+    background-image: url('./images/hostel-appliances-such-as-mattress-and-kettle-in-d-upscaled.jpg');
+    background-size: cover;
+    color: #ffffff;
+}
+.category-button.others {
+    background-image: url('./images/HD-wallpaper-black-vgradient-13-gradient-gray.jpg');
+    background-size: cover;
+    color: #ffffff;
+}
+
+
+.bottom-nav {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+}
+
+.copyright p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 50%;
+    color: #923641;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icons a:last-child {
+    margin-right: 20px;
+}
+
+.social-icons a:hover {
+    background-color: #f2f2f2;
+}
