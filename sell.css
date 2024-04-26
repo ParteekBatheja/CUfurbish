@@ -99,6 +99,11 @@ header {
     justify-content: space-evenly;
     
 }
+
+a{
+    text-decoration: none;
+}
+
 h1 {
     margin-top: 50px;
     color: #000000;
