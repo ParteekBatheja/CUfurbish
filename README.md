@@ -1,1 +1,5 @@
 # CUfurbish
+
+---
+permalink: /main.html
+---
