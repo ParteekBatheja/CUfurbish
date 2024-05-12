@@ -1,5 +1,1 @@
 # CUfurbish
-
----
-permalink: /login.html
----
