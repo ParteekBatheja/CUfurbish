@@ -1,5 +1,5 @@
 # CUfurbish
 
 ---
-permalink: /main.html
+permalink: /login.html
 ---
